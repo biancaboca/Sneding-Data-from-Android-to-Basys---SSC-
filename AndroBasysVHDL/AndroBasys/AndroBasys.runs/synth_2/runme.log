@@ -1,0 +1,925 @@
+
+*** Running vivado
+    with args -log test_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test_env.tcl -notrace
+Command: synth_design -top test_env -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7060 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 282.723 ; gain = 72.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/test_env.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'RX_FSM' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/RX_FSM.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'RX_FSM' (1#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/RX_FSM.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'TX_FSM' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/TX_FSM.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'TX_FSM' (2#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/TX_FSM.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/debounce.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (3#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/debounce.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'dFlipFlop' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/dFlipFlop.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'dFlipFlop' (4#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/dFlipFlop.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:38]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:47]
+WARNING: [Synth 8-614] signal 'cnt1' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:70]
+WARNING: [Synth 8-614] signal 'nr1' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (5#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'storeData' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/storeData.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'storeData' (6#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/storeData.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'sendData' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/sendData.vhd:44]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/sendData.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'sendData' (7#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/sendData.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (8#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/test_env.vhd:21]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 320.188 ; gain = 110.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 320.188 ; gain = 110.406
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]
+Finished Parsing XDC File [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 613.504 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'RX_FSM'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   start |                              001 |                              001
+                    bits |                              010 |                              010
+                    stop |                              011 |                              011
+                   waits |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'RX_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_env 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module RX_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 3     
+Module TX_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module dFlipFlop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SSD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module storeData 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module sendData 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+WARNING: [Synth 8-3332] Sequential element (senddatca/Q1_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (senddatca/Q2_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (senddatca/Q3_reg) is unused and will be removed from module test_env.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|SSD         | cat        | 256x7         | LUT            | 
+|test_env    | ssd/cat    | 256x7         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    34|
+|4     |LUT2   |    19|
+|5     |LUT3   |    78|
+|6     |LUT4   |    20|
+|7     |LUT5   |    14|
+|8     |LUT6   |    63|
+|9     |MUXF7  |     8|
+|10    |FDRE   |   178|
+|11    |IBUF   |    12|
+|12    |OBUF   |    14|
+|13    |OBUFT  |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-----------+------+
+|      |Instance       |Module     |Cells |
++------+---------------+-----------+------+
+|1     |top            |           |   465|
+|2     |  debounceTxEn |debounce   |    48|
+|3     |  dflipflop    |dFlipFlop  |     1|
+|4     |  rxmodule     |RX_FSM     |    56|
+|5     |  sendData     |sendData   |    80|
+|6     |  ssd          |SSD        |    33|
+|7     |  storeData    |storeData  |   118|
+|8     |  swmodelabel  |debounce_0 |     3|
+|9     |  txmodule     |TX_FSM     |    15|
++------+---------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 613.504 ; gain = 110.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 613.504 ; gain = 403.723
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 613.504 ; gain = 403.723
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.runs/synth_2/test_env.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 613.504 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 19 23:39:59 2022...
+
+*** Running vivado
+    with args -log test_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test_env.tcl -notrace
+Command: synth_design -top test_env -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 34640 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 282.723 ; gain = 72.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/test_env.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'RX_FSM' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/RX_FSM.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'RX_FSM' (1#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/RX_FSM.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'TX_FSM' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/TX_FSM.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'TX_FSM' (2#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/TX_FSM.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/debounce.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (3#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/debounce.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'dFlipFlop' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/dFlipFlop.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'dFlipFlop' (4#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/dFlipFlop.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:38]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:47]
+WARNING: [Synth 8-614] signal 'cnt1' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:70]
+WARNING: [Synth 8-614] signal 'nr1' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (5#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/SSD.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'storeData' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/storeData.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'storeData' (6#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/storeData.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'sendData' [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/sendData.vhd:44]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/sendData.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'sendData' (7#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/sendData.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (8#1) [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/sources_1/new/test_env.vhd:21]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 320.152 ; gain = 110.020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 320.152 ; gain = 110.020
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]
+Finished Parsing XDC File [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 613.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'RX_FSM'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   start |                              001 |                              001
+                    bits |                              010 |                              010
+                    stop |                              011 |                              011
+                   waits |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'RX_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_env 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module RX_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 3     
+Module TX_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module dFlipFlop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SSD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module storeData 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module sendData 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+WARNING: [Synth 8-3332] Sequential element (senddatca/Q1_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (senddatca/Q2_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (senddatca/Q3_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (ssd/cntmode_reg[1]) is unused and will be removed from module test_env.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|SSD         | cat        | 256x7         | LUT            | 
+|test_env    | ssd/cat    | 256x7         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    34|
+|4     |LUT2   |    19|
+|5     |LUT3   |    78|
+|6     |LUT4   |    19|
+|7     |LUT5   |    14|
+|8     |LUT6   |    63|
+|9     |MUXF7  |     8|
+|10    |FDRE   |   177|
+|11    |IBUF   |    12|
+|12    |OBUF   |    20|
+|13    |OBUFT  |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-----------+------+
+|      |Instance       |Module     |Cells |
++------+---------------+-----------+------+
+|1     |top            |           |   463|
+|2     |  debounceTxEn |debounce   |    48|
+|3     |  dflipflop    |dFlipFlop  |     1|
+|4     |  rxmodule     |RX_FSM     |    56|
+|5     |  sendData     |sendData   |    80|
+|6     |  ssd          |SSD        |    30|
+|7     |  storeData    |storeData  |   118|
+|8     |  swmodelabel  |debounce_0 |     4|
+|9     |  txmodule     |TX_FSM     |    15|
++------+---------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 613.352 ; gain = 403.219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 613.352 ; gain = 110.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 613.352 ; gain = 403.219
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 613.352 ; gain = 403.219
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.runs/synth_2/test_env.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 613.352 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 00:25:06 2022...

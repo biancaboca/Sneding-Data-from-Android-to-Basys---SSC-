@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Nov 20 00:24:05 2022
+# Process ID: 27088
+# Current directory: C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.runs/synth_2
+# Command line: vivado.exe -log test_env.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+# Log file: C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.runs/synth_2/test_env.vds
+# Journal file: C:/Users/Bianca/Downloads/AndroBasys/AndroBasys.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source test_env.tcl -notrace

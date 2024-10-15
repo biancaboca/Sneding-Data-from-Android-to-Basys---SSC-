@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Nov 07 20:46:28 2022
+# Process ID: 16124
+# Current directory: C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.runs/impl_1
+# Command line: vivado.exe -log test_env.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_env.tcl -notrace
+# Log file: C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.runs/impl_1/test_env.vdi
+# Journal file: C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test_env.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W5' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:7]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W16' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:20]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W17' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:22]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W15' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:24]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W14' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:28]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W13' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:30]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T2' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:36]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W2' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:40]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E19' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:53]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U19' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:55]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V19' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W18' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:59]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U15' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:61]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V13' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:67]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V3' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:69]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W3' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:71]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N3' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:77]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P1' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:79]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W7' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:86]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W6' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:88]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V8' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:92]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U5' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:94]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W4' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:109]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W19' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:118]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T17' is not a valid site or package pin name. [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc:120]
+Finished Parsing XDC File [C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.srcs/constrs_1/imports/AC/Basys3_test_env.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net rxmodule/BAUD_CNT[0] has multiple drivers: rxmodule/BAUD_CNT_reg[0]/Q, rxmodule/BAUD_CNT_reg[0]__0/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net rxmodule/BAUD_CNT[1] has multiple drivers: rxmodule/BAUD_CNT_reg[1]/Q, rxmodule/BAUD_CNT_reg[1]__0/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net rxmodule/BAUD_CNT[2] has multiple drivers: rxmodule/BAUD_CNT_reg[2]/Q, rxmodule/BAUD_CNT_reg[2]__0/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net rxmodule/BAUD_CNT[3] has multiple drivers: rxmodule/BAUD_CNT_reg[3]/Q, rxmodule/BAUD_CNT_reg[3]__0/Q.
+INFO: [Project 1-461] DRC finished with 4 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.370 . Memory (MB): peak = 476.504 ; gain = 11.480
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 0 Warnings, 25 Critical Warnings and 5 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 07 20:46:34 2022...

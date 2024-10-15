@@ -1,0 +1,219 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3D42"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/turnIn"
+        android:layout_width="108dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="16dp"
+        android:text="Turn In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="263dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Introduceti caracterele dorite:"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/START"
+        android:layout_width="82dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:background="#432D2D"
+        android:backgroundTint="#000000"
+        android:hapticFeedbackEnabled="true"
+        android:text="START"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/TurnOFF"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/turnIn" />
+
+    <ImageView
+        android:id="@+id/ZERO"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:rotationY="40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/zero" />
+
+    <ImageView
+        android:id="@+id/UNU"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:rotationY="-40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/unu" />
+
+    <ImageView
+        android:id="@+id/DOI"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="232dp"
+        android:rotation="-30"
+        android:rotationX="40"
+        android:rotationY="40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doi" />
+
+    <ImageView
+        android:id="@+id/TREI"
+        android:layout_width="80dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="-10dp"
+        android:rotationX="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/trei" />
+
+    <ImageView
+        android:id="@+id/PATRU"
+        android:layout_width="81dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:rotation="30"
+        android:rotationY="49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/patru" />
+
+    <ImageView
+        android:id="@+id/CINCI"
+        android:layout_width="58dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="16dp"
+        android:rotationX="-20"
+        android:rotationY="-49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinci" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="-30dp"
+        app:layout_constraintBottom_toTopOf="@+id/START"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="262dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="-100dp"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/pngegg" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:ems="10"
+        android:textColor="@android:color/black"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="148dp"
+        android:rotation="-40"
+        android:rotationX="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sase" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="64dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="49dp"
+        android:rotation="20"
+        android:rotationX="20"
+        android:rotationY="-40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <Button
+        android:id="@+id/TurnOFF"
+        android:layout_width="108dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="Turn OFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/DOI"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/debug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

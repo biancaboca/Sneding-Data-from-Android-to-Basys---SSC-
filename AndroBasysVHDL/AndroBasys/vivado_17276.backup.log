@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Nov 08 21:38:25 2022
+# Process ID: 17276
+# Current directory: C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22764 C:\Users\andre\Documents\An3_sem1\ssc\AndroBasys\AndroBasys.xpr
+# Log file: C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/vivado.log
+# Journal file: C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/fac/xilnix/Vivado/2016.4/data/ip'.
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Nov 08 21:39:01 2022] Launched impl_2...
+Run output will be captured here: C:/Users/andre/Documents/An3_sem1/ssc/AndroBasys/AndroBasys.runs/impl_2/runme.log
+reset_run impl_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 08 21:42:39 2022...

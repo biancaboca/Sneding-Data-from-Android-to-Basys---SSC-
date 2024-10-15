@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3D42"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonReturn"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="354dp"
+        android:layout_height="493dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lines="2"
+        android:maxLines="4"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="\n"
+
+
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="237dp"
+        android:layout_height="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cliping1"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="142dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="72dp"
+        android:focusable="true"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="parent"></ListView>
+
+    <!--    <android.widget.Toolbar-->
+    <!--        android:id="@+id/my_toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="#FF3700B3"-->
+    <!--        android:elevation="4dp"-->
+    <!--        android:title="ANDRO BASYS RECEIVE INFO"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        tools:layout_editor_absoluteX="0dp"-->
+    <!--        tools:layout_editor_absoluteY="-4dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

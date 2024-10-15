@@ -1,0 +1,92 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sun Nov 20 00:26:23 2022
+| Host         : DESKTOP-9AD93KU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file test_env_control_sets_placed.rpt
+| Design       : test_env
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |    87 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              41 |           13 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             120 |           38 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+-----------------------+------------------+----------------+
+|  Clock Signal  |         Enable Signal         |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++----------------+-------------------------------+-----------------------+------------------+----------------+
+|  clk_IBUF_BUFG | baud_ENabletx                 |                       |                1 |              1 |
+|  txEN_BUFG     |                               |                       |                1 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[1]_i_1_n_0   |                       |                2 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[2]_i_1_n_0   |                       |                1 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[3]_i_1_n_0   |                       |                1 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[4]_i_1_n_0   |                       |                1 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[5]_i_1_n_0   |                       |                2 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[6]_i_1_n_0   |                       |                1 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[7]_i_1_n_0   |                       |                1 |              2 |
+|  clk_IBUF_BUFG | debounceTxEn/Q1_reg_0         |                       |                1 |              2 |
+|  clk_IBUF_BUFG | rxmodule/RX_DATA[0]_i_1_n_0   |                       |                2 |              2 |
+|  rxrdy_BUFG    |                               |                       |                2 |              4 |
+|  clk_IBUF_BUFG | baud_ENablerx                 |                       |                3 |              5 |
+|  txEN_BUFG     | sendData/data[15]_i_1_n_0     |                       |                1 |              8 |
+|  txEN_BUFG     | sendData/data[23]_i_1_n_0     |                       |                2 |              8 |
+|  txEN_BUFG     | sendData/data[31]_i_1_n_0     |                       |                2 |              8 |
+|  txEN_BUFG     | sendData/data[7]_i_1_n_0      |                       |                2 |              8 |
+|  rxrdy_BUFG    | storeData/data[15]_i_1_n_0    |                       |                1 |              8 |
+|  rxrdy_BUFG    | storeData/data[23]_i_1_n_0    |                       |                1 |              8 |
+|  rxrdy_BUFG    | storeData/data[31]_i_1_n_0    |                       |                2 |              8 |
+|  rxrdy_BUFG    | storeData/data[7]_i_1_n_0     |                       |                2 |              8 |
+|  clk_IBUF_BUFG | ltOp                          | eqOp                  |                3 |             10 |
+|  clk_IBUF_BUFG | baudratetx[0]_i_2_n_0         | baudratetx[0]_i_1_n_0 |                4 |             14 |
+| ~rxrdy_BUFG    | storeData/DataOut[31]_i_1_n_0 |                       |                9 |             32 |
+|  clk_IBUF_BUFG |                               |                       |               10 |             35 |
++----------------+-------------------------------+-----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                    10 |
+| 4      |                     1 |
+| 5      |                     1 |
+| 8      |                     8 |
+| 10     |                     1 |
+| 14     |                     1 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

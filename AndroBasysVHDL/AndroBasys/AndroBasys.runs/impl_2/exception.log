@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\andre\Documents\An3_sem1\ssc\AndroBasys\AndroBasys.runs\impl_2/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
